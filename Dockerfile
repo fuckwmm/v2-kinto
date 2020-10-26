@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM alpine:edge
 
 ENV PORT    3000
 RUN mkdir -p /u
