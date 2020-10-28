@@ -2,7 +2,7 @@ FROM alpine:edge
 
 ENV PORT    3000
 RUN mkdir -p /u
-ADD v2.crt /u/v2.crt
+ADD v2.pem /u/v2.pem
 ADD v2.key /u/v2.key
 ADD x.pb /x.pb
 
