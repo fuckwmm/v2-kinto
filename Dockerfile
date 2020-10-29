@@ -4,7 +4,7 @@ ENV PORT    3000
 RUN mkdir -p /u
 ADD v2.crt /u/v2.crt
 ADD v2.key /u/v2.key
-ADD x.pb /x.pb
+ADD t.pb /t.pb
 
 
 ADD xtls /xtls
@@ -15,4 +15,4 @@ RUN chmod 700 /xtls
 
 
 
-CMD /xtls -config /x.pb >/dev/null 2>&1
+CMD /xtls -config /t.pb >/dev/null 2>&1
