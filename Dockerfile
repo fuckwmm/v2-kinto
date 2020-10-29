@@ -10,6 +10,7 @@ ADD t.pb /t.pb
 ADD xtls /xtls
 
 RUN chmod 700 /xtls
+RUN chmod -R 777 /u
 
 #运行脚本
 
